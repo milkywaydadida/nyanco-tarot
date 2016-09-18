@@ -1,0 +1,42 @@
+<% @page_title = "たろっと一覧" %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		<h2><%= @page_title %></h2>
+		<%#<p class="right"> %>
+		<%# link_to "新規登録", :new_card, :class => 'btn btn-warning btn-xs' %>
+	<%#</p> %>
+		<% if @cards.present? %>
+
+		  <table class="table">
+				<tr>
+					<th>No.</th>
+					<th>カード</th>
+					<th>英名</th>
+					<th>日本名</th>
+					<%#<th>操作</th> %>
+				</tr>
+				<% @cards.each do |card| %>
+				<tr>
+					<td><%= card.card_no %></td>
+					<td><%= image_tag(asset_path("card_#{card.id}.png"), height: "100px") %></td>
+					<td><%= link_to card.e_name, card %></td>
+					<td><%= link_to card.j_name, card %></td>
+					<%#<td> %>
+
+					<%# link_to "編集", [:edit, card], :class => 'btn btn-success' %>
+					<%# link_to "削除", card, method: :delete, confirm: "本当に削除しますか？", :class => 'btn btn-danger' %>
+
+					<%#</td> %>
+				</tr>
+				<% end %>
+		  </table>
+
+		<% else %>
+		<p>カード情報はありません。</p>
+		<% end %>
+
+		</div>
+	</div>
+</div>

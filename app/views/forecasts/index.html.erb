@@ -1,0 +1,23 @@
+<% @page_title = "占ってみる" %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		<h2 class="center"><%= @page_title %></h2>
+		<p class="center">ラブ運、仕事運、健康運、金運が占えるにゃ！</p>
+		<h3 class="center">1枚引き</h3>
+		<p class="center">なんでもいいからシンプルに知りたいなら1枚引いてみるにゃ！</p>
+		<div class="col-xs-12 col-md-4">
+		</div>
+		<div class="col-xs-12 col-md-4">
+		
+		<p class="center"><%= link_to(image_tag("card_back.png", size: "140x220", alt: "",align: "center"), "forecasts/#{@take}") %></p>
+		<p class="center mb30"><%= link_to "一枚引く", "forecasts/#{@take}", :class => 'btn btn-success' %></p>
+		</div>
+		<div class="col-xs-12 col-md-4">
+		</div>
+		</div>
+	</div>
+
+	
+</div>

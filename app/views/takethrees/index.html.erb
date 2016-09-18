@@ -1,0 +1,27 @@
+<% @page_title = "占ってみる" %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		<h2 class="center"><%= @page_title %></h2>
+		<p class="center">ラブ運、仕事運、健康運、金運が占えるにゃ！</p>
+		</div>
+	</div>
+	<div class="row">
+	<h3 class="center">3枚引き</h3>
+	<p class="center">3枚のカードから過去と現在と未来の状況を占えるにゃ！</p>
+		<div class="col-xs-12 col-md-4">
+		<p class="center"><%= link_to(image_tag("card_back.png", size: "140x220", alt: "",align: "center"), "takethrees/#{@take1}") %></p>
+		<p class="center mb30"><%= link_to "過去", "takethrees/#{@take1}", :class => 'btn btn-success' %></p>
+		</div>
+		<div class="col-xs-12 col-md-4">
+		<p class="center"><%= link_to(image_tag("card_back.png", size: "140x220", alt: "",align: "center"), "takethrees/#{@take2}") %></p>
+		<p class="center mb30"><%= link_to "現在", "takethrees/#{@take2}", :class => 'btn btn-success' %></p>
+		</div>
+		<div class="col-xs-12 col-md-4">
+		<p class="center"><%= link_to(image_tag("card_back.png", size: "140x220", alt: "",align: "center"), "takethrees/#{@take3}") %></p>
+		<p class="center mb30"><%= link_to "未来", "takethrees/#{@take3}", :class => 'btn btn-success' %></p>
+		</div>
+	</div>
+	
+</div>

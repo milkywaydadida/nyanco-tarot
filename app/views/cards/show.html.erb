@@ -1,0 +1,31 @@
+<% @page_title = "たろっと詳細" %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		<h2><%= @page_title %> <%= link_to "編集", [:edit, @card], :class => 'btn btn-warning btn-xs' %></h2>
+		
+<p class="center"><%= card_image_tag @card, width: 200 %></p>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><%= @card.card_no %>. <strong><%= @card.j_name %></strong> <%= @card.e_name %></div>
+    <!-- Table -->
+  <table class="table">
+				<tr>
+					<th><span class="label label-success">正位置</span></th>
+					<td><%= @card.keyword_u %></td>
+				</tr>
+				<tr>
+					<th><span class="label label-info">逆位置</span></th>
+					<td><%= @card.keyword_r %></td>
+				</tr>
+  </table>
+  <div class="panel-body">
+    <p><%= @card.message %></p>
+  </div>
+
+</div>
+
+		</div>
+	</div>
+</div>

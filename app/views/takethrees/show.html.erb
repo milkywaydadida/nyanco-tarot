@@ -1,0 +1,48 @@
+<% @page_title = "三枚引き結果" %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		<h2><%= @page_title %> </h2>
+		
+<p class="center"><%= image_tag "#{@takethree.tarot_img}", width: 200 %></p>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><h3><%= @takethree.tarot_no %>. <%= @takethree.j_name %>
+  <span><%= @takethree.e_name %></span></h3></div>
+
+  
+   
+    <!-- Table -->
+  <table class="table">
+				<tr>
+					<th><span class="label label-default">位　置</span></th>
+					<td><span class="label label-success"><%= @takethree.up_re %></span></td>
+				</tr>
+				<tr>
+					<th><span class="label label-danger">ラブ運</span></th>
+					<td><%= @takethree.love %></td>
+				</tr>
+				<tr>
+					<th><span class="label label-info">仕事運</span></th>
+					<td><%= @takethree.work %></td>
+				</tr>
+				<tr>
+					<th><span class="label label-success">健康運</span></th>
+					<td><%= @takethree.health %></td>
+				</tr>
+				<tr>
+					<th><span class="label label-warning">金　運</span></th>
+					<td><%= @takethree.money %></td>
+				</tr>
+  </table>
+
+
+
+
+
+</div>
+<p class="center mb30"><%= link_to "戻る", "#",  onclick: "javascript:window.history.back(-1);return false;", class: "btn btn-default" %></p>
+		</div>
+	</div>
+</div>
