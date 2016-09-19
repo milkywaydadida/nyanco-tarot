@@ -1,3 +1,47 @@
 <% @page_title = "このサイトについて" %>
-<h1><%= @page_title %></h1>
-<p>このサイトは、Ruby (on Rails)の習得を目的として、たろっとを作ってみようということで作ってみました。</p>
+<div class="container center">
+
+    <h1 class="mt30 mb30"><%= @page_title %></h1>
+    <p>このサイトは、Ruby (on Rails)の習得を目的としており、random関数などを使用して、たろっとを作ってみようということで作ってみました。</p>
+    <p>検索機能、一覧表示、詳細ページ表示など、下記の文献を参考に制作をしました。</p>
+    <h2 class="mt30 mb30">参考文献</h2>
+    <h3 class="mt30 mb30">Ruby / Ruby on Rails</h3>
+    <div class="row">
+      <div class="col-sm-4 center">
+        <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=FFFFFF&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=adlib-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=4797386290" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+      </div>
+      <div class="col-sm-4 center">
+        <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?t=adlib-22&o=9&p=8&l=as1&asins=4774175676&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+      </div>
+
+      <div class="col-sm-4 center">
+        <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?t=adlib-22&o=9&p=8&l=as1&asins=4844331566&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+      </div>
+    </div>
+    <h3 class="mt30 mb30">タロット</h3>
+    <div class="row">
+      <div class="col-sm-4 center">
+        <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?t=adlib-22&o=9&p=8&l=as1&asins=4905447402&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
+      </div>
+
+      <div class="col-sm-4 center">
+      <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?t=adlib-22&o=9&p=8&l=as1&asins=4766212797&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+      </div>
+
+      <div class="col-sm-4 center">
+        <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?t=adlib-22&o=9&p=8&l=as1&asins=4944110197&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=FFFFFF&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+      </div>
+
+
+
+    </div>
+    <h2 class="mt30 mb30">素材について</h2>
+    <p>使用しているタロットカードのイラストはこちらより使用させていただいてます。<br>
+      <a href="http://www.illust-box.jp/member/sozai/73000/%E3%82%BF%E3%83%AD%E3%83%83%E3%83%88/" target="_blank">covitoさん</a>、ありがとうございます。
+    </p>
+    <p><a href="http://www.illust-box.jp/member/sozai/73000/%E3%82%BF%E3%83%AD%E3%83%83%E3%83%88/" target="_blank"><%= image_tag(asset_path("/cards/1.png"), size: "190x300", alt: "0．The fool　遇者") %></a></p>
+    <p class="mb40">
+    <a href="http://www.illust-box.jp/member/sozai/73000/%E3%82%BF%E3%83%AD%E3%83%83%E3%83%88/" target="_blank" class="btn btn-success"><strong>無料イラスト・covitoさんの「タロット」のイラスト</strong></a></p>
+
+</div>
